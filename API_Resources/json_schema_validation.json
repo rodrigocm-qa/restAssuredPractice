@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "timestamp": {
+      "type": "integer"
+    },
+    "base": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "rates": {
+      "type": "object",
+      "properties": {
+        "USD": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "USD"
+      ]
+    }
+  },
+  "required": [
+    "success",
+    "timestamp",
+    "base",
+    "date",
+    "rates"
+  ]
+}
